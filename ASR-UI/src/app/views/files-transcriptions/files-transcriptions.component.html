@@ -1,0 +1,67 @@
+<div class="main">
+    <nav class="navbar">
+      <span>ASR</span>
+    </nav>
+    <div class="mp3-list">
+      <div class="row">
+        <h1>MP3 Files and Transcriptions</h1>
+        <button>Get All Transcriptions</button>
+      </div>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>MP3 File</th>
+            <th>Transcription</th>
+            <th>Play</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let file of mp3Files">
+            <td>{{ file.mp3_file }}</td>
+            <td>
+              <label>Choose Your Answer:</label>
+              <div *ngFor="let line of file.transcription_lines; let i = index">
+                <input type="radio" [name]="'radio_' + file.mp3_file" [value]="line" [checked]="file.answer === line" [class.selected]="file.answer === line" (change)="updateMyAnswerValue(file.mp3_file, $event.target.value)">
+                <!-- {{ i + 1 }}. {{ line }}<br> -->
+                <span [class.selected]="file.answer === line">{{ i + 1 }}. {{ line }}</span><br>
+              </div>
+              <label> or </label><br>
+              <label>Type your answer: </label>
+              <input type="text" [name]="'text_' + file.mp3_file" (input)="updateMyAnswerValue(file.mp3_file, $event.target.value)"><br>
+              <div class="submit">
+                <button (click)="saveTranscription(file.mp3_file)">Save</button>
+              </div>
+              <div class="answered" *ngIf="file.answer !== ''">
+                <div class="custom-transcription" *ngIf="isAnyRadioChecked(file)">
+                  <span>You have provdide a custom transcription for this audio</span>
+                </div>
+                <span>Your answer: {{ file.answer }}</span>
+              </div>
+              <div class="not-answered" *ngIf="file.answer === ''">
+                <span>You have not answered transcription for this audio</span>
+              </div>
+            </td>
+            <td>
+              <audio controls>
+                <source [src]="getMP3FileUrl(file.mp3_file)" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    
+    <!-- Pagination Bar -->
+    <div class="pagination-bar">
+      <button (click)="prevPage()" [disabled]="page === 1">Previous</button>
+      <span>Page {{ page }}</span>
+      <button (click)="nextPage()">Next</button>
+    </div>
+    
+    
+    
+  </div>
+  

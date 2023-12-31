@@ -1,0 +1,108 @@
+.main {
+    background-color: #444;
+    color: #fff;
+  }
+  
+  .navbar {
+    background-color: #1a1a1a;
+    overflow: hidden;
+    font-size: 40px;
+    padding-left: 20px;
+    color: #ccc;
+  }
+  
+  .mp3-list {
+    margin: 20px;
+  }
+  
+  h1 {
+    color: #555;
+    text-align: center;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #666; /* Medium gray */
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #333; /* Dark gray */
+    color: #fff; /* White */
+  }
+  
+  tr:hover {
+    background-color: #3a3a3a; /* Medium dark gray */
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  .pagination-bar {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  button {
+    padding: 8px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #007bff; /* Blue */
+    color: #fff; /* White */
+    border: 1px solid #007bff; /* Blue */
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border: 1px solid #0056b3; /* Darker blue on hover */
+  }
+  
+  input[type="text"]:focus {
+    border: 1px solid #3498db;
+    outline: none;
+  }
+  
+  .not-answered {
+    background-color: #f8d7da; /* Light red background color */
+    color: #721c24; /* Dark red text color */
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #f5c6cb; /* Border color for better visibility */
+    border-radius: 5px; /* Rounded corners for a softer look */
+    text-align: center;
+  }
+  
+  .answered {
+    background-color: #28a745; /* Green */
+    color: #000; /* Black */
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #218838; /* Darker green for better visibility */
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .selected {
+    background-color: #ffd700; /* Gold */
+    color: #000;
+  }
+  
+  .submit {
+    text-align: center;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #d3d3d3; /* Light gray */
+  }
+  
