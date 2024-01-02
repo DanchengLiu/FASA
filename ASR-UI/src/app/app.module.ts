@@ -4,6 +4,9 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FilesTranscriptionsComponent } from './views/files-transcriptions/files-transcriptions.component';
+import { FileTranscriptionsService } from './services/file-transcriptions.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -12,9 +15,10 @@ import { FilesTranscriptionsComponent } from './views/files-transcriptions/files
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [FileTranscriptionsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

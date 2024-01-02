@@ -6,6 +6,7 @@ import gc
 from prediction import predict_dataset, predict_one_file
 from segmentation import segment_dataset, segment_from_prediction
 from preprocess import preprocess_dataset, preprocess_txt
+from user_intervention import run_user_intervention_app
 
 parser = argparse.ArgumentParser(description='FASA Toolkit v1.0')
 
@@ -77,17 +78,17 @@ if __name__ == "__main__":
                 preprocess_dataset(args.input_data, in_place=True, out_folder = None)
         
         #prediction
-        predict_dataset(in_files, args.intermediate, model_type=args.model, HF_token=args.HF, 
-                        device=args.device, precision=args.precision, word_level=word_level_alignment)
+        #predict_dataset(in_files, args.intermediate, model_type=args.model, HF_token=args.HF, 
+        #                device=args.device, precision=args.precision, word_level=word_level_alignment)
         
         #alignment
-        segment_dataset(args.intermediate,args.output_data, delete_intermediate=delete_intermediate, 
-                        keep_timestamp=timestamp, export_word_timestamp=word_level_alignment, 
-                        wer_keep_threshold=args.wer_keep_segment, wer_check_threshold=args.wer_check_segment)
+        #segment_dataset(args.intermediate,args.output_data, delete_intermediate=delete_intermediate, 
+        #                keep_timestamp=timestamp, export_word_timestamp=word_level_alignment, 
+        #                wer_keep_threshold=args.wer_keep_segment, wer_check_threshold=args.wer_check_segment)
         
         #checking
         if args.check=='True':
-            pass
+            run_user_intervention_app(args.output_data)
         
         
     elif os.path.isfile(in_files):
@@ -109,4 +110,4 @@ if __name__ == "__main__":
         
         #checking
         if args.check=='True':
-            pass
+            run_user_intervention_app(args.output_data)

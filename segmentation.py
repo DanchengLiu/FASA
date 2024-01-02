@@ -127,7 +127,7 @@ def segment_from_prediction(dataset_folder, output_dataset_folder, delete_interm
 
 def segment_dataset(dataset_folder, output_dataset_folder, delete_intermediate=False,  
                     keep_timestamp=False, export_word_timestamp=True, 
-                    wer_keep_threshold=0.1, wer_check_threshold=0.3):
+                    wer_keep_threshold=0.3, wer_check_threshold=0.1):
     tmp = os.listdir(dataset_folder)
     normalizer = EnglishTextNormalizer()
     for folder in tmp:
@@ -196,8 +196,8 @@ def segment_dataset(dataset_folder, output_dataset_folder, delete_intermediate=F
                     print("matched segment is: "+matching)
                     print("This segment is aborted.")
                     flag=False
-                if flag and WER_LINE < wer_check_threshold:
-                    if WER_LINE < wer_keep_threshold:
+                if flag and WER_LINE < wer_keep_threshold:
+                    if WER_LINE < wer_check_threshold:
                         if keep_timestamp:
                             fd = open(os.path.join(segment_root, info[1]+'_'+info[2]+'.txt'), "w")
                             fd.write(matching+'\t'+info[1]+'\t'+info[2])
