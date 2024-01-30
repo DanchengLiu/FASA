@@ -1,0 +1,244 @@
+@UTF8
+@PID:	11312/c-00036369-1
+@Begin
+@Languages:	eng
+@Participants:	CHI Target_Child, EXA Investigator
+@ID:	eng|ENNI|CHI|7;03.25|male|TD||Target_Child|||
+@ID:	eng|ENNI|EXA|||||Investigator|||
+@Media:	758, audio, unlinked
+@Comment:	Birth of CHI is 05-OCT-1993
+@Date:	30-JAN-2001
+@Tape Location:	Disk L24, Track 6
+@G:	A1
+@Types:	cross, narrative, TD
+*CHI:	there (i)s a giraffe and this <um> [/] elephant .
+%mor:	pro:exist|there cop|be&3S det:art|a n|giraffe coord|and det:dem|this n|elephant .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|4|CONJ 6|7|DET 7|5|COORD 8|2|PUNCT
+*CHI:	and the elephant (i)s bouncing this ball .
+%mor:	coord|and det:art|the n|elephant aux|be&3S part|bounce-PRESP det:dem|this n|ball .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+*CHI:	and they (a)re right beside a pool .
+%mor:	coord|and pro:sub|they cop|be&PRES adv|right prep|beside det:art|a n|pool .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|JCT 5|3|JCT 6|7|DET 7|5|POBJ 8|3|PUNCT
+*CHI:	and now the ball lands into the pool .
+%mor:	coord|and adv:tem|now det:art|the n|ball n|land-PL prep|into det:art|the n|pool .
+%gra:	1|0|INCROOT 2|1|COORD 3|5|DET 4|5|MOD 5|2|OBJ 6|5|NJCT 7|8|DET 8|6|POBJ 9|1|PUNCT
+*CHI:	and now the giraffe (.) jumps into the pool .
+%mor:	coord|and adv:tem|now det:art|the n|giraffe n|jump-PL prep|into det:art|the n|pool .
+%gra:	1|0|INCROOT 2|1|COORD 3|5|DET 4|5|MOD 5|2|OBJ 6|5|NJCT 7|8|DET 8|6|POBJ 9|1|PUNCT
+*CHI:	and he (i)s swimming for it .
+%mor:	coord|and pro:sub|he aux|be&3S part|swim-PRESP prep|for pro:per|it .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|5|POBJ 7|4|PUNCT
+*CHI:	and now he (i)s <be> [/] be giving it back to the elephant .
+%mor:	coord|and adv:tem|now pro:sub|he aux|be&3S aux|be part|give-PRESP pro:per|it adv|back prep|to det:art|the n|elephant .
+%gra:	1|6|LINK 2|6|JCT 3|6|SUBJ 4|6|AUX 5|6|AUX 6|0|ROOT 7|6|OBJ 8|6|JCT 9|6|JCT 10|11|DET 11|9|POBJ 12|6|PUNCT
+*CHI:	and now (.) the elephant (i)s kind of smiling .
+%mor:	coord|and adv:tem|now det:art|the n|elephant cop|be&3S adj|kind prep|of part|smile-PRESP .
+%gra:	1|5|LINK 2|5|JCT 3|4|DET 4|5|SUBJ 5|0|ROOT 6|5|PRED 7|6|JCT 8|7|POBJ 9|5|PUNCT
+*CHI:	<and> [/] (.) and the giraffe (i)s just smiling at each_other .
+%mor:	coord|and det:art|the n|giraffe aux|be&3S adv|just part|smile-PRESP prep|at pro:refl|each_other .
+%gra:	1|6|LINK 2|3|DET 3|6|SUBJ 4|6|AUX 5|6|JCT 6|0|ROOT 7|6|JCT 8|7|POBJ 9|6|PUNCT
+*CHI:	that (i)s the end . [+ bch]
+%mor:	pro:dem|that cop|be&3S det:art|the n|end .
+%gra:	1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|2|PUNCT
+@G:	A2
+*CHI:	the elephant and the giraffe again .
+%mor:	det:art|the n|elephant coord|and det:art|the n|giraffe adv:tem|again .
+%gra:	1|2|DET 2|0|INCROOT 3|2|CONJ 4|5|DET 5|3|COORD 6|5|JCT 7|2|PUNCT
+*CHI:	and they see this diving board .
+%mor:	coord|and pro:sub|they v|see det:dem|this part|dive-PRESP n|board .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|6|DET 5|6|MOD 6|3|OBJ 7|3|PUNCT
+*CHI:	and now (.) the elephant (i)s <gonna> [//] pointing at it .
+%mor:	coord|and adv:tem|now det:art|the n|elephant aux|be&3S part|point-PRESP prep|at pro:per|it .
+%gra:	1|6|LINK 2|6|JCT 3|4|DET 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|7|POBJ 9|6|PUNCT
+*CHI:	and <it (i)s gonna> [//] and (.) he (i)s going to [: gonna] go to run over to it .
+%mor:	coord|and coord|and pro:sub|he aux|be&3S part|go-PRESP part|go&PRESP~inf|to v|go inf|to v|run adv|over prep|to pro:per|it .
+%gra:	1|5|LINK 2|5|LINK 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|XJCT 7|8|INF 8|6|COMP 9|10|INF 10|8|COMP 11|10|JCT 12|10|JCT 13|12|POBJ 14|5|PUNCT
+*CHI:	and now they are both running over .
+%mor:	coord|and adv:tem|now pro:sub|they cop|be&PRES qn|both part|run-PRESP adv|over .
+%gra:	1|0|INCROOT 2|1|COORD 3|4|SUBJ 4|2|CMOD 5|4|PRED 6|5|XMOD 7|6|JCT 8|1|PUNCT
+*CHI:	and elephant (i)s going to [^ gonna] fall .
+%mor:	coord|and n|elephant aux|be&3S part|go-PRESP prep|to n|fall .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|5|POBJ 7|4|PUNCT
+*CHI:	and now the elephant fell and (.) <stub> [//] <made> [//] gots [: has got] a boo_boo on her knee .
+%mor:	coord|and adv:tem|now det:art|the n|elephant v|fall&PAST coord|and aux|have&3S part|get&PASTP det:art|a n|boo&DUP prep|on det:poss|her n|knee .
+%gra:	1|5|LINK 2|5|JCT 3|4|DET 4|5|SUBJ 5|0|ROOT 6|5|CONJ 7|8|AUX 8|6|COORD 9|10|DET 10|8|OBJ 11|8|JCT 12|13|DET 13|11|POBJ 14|5|PUNCT
+*CHI:	now (.) the lifeguard (.) is another [!] elephant and comes over to see what the matter .
+%mor:	adv:tem|now det:art|the n|+n|life+n|guard cop|be&3S qn|another n|elephant coord|and v|come-3S adv|over inf|to v|see pro:int|what det:art|the v|matter .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|6|QUANT 6|4|PRED 7|4|CONJ 8|7|COORD 9|8|JCT 10|11|INF 11|8|XJCT 12|14|DET 13|14|DET 14|11|COMP 15|4|PUNCT
+*CHI:	and now <um (..) the> [/] <the> [/] the (.) lifeguard (i)s putting a bandaid on the elephant that (.) <made> [//] got a boo_boo on her knee .
+%mor:	coord|and adv:tem|now det:art|the n|+n|life+n|guard aux|be&3S part|put-PRESP det:art|a n|bandaid prep|on det:art|the n|elephant pro:rel|that v|get&PAST det:art|a n|boo&DUP prep|on det:poss|her n|knee .
+%gra:	1|6|LINK 2|6|JCT 3|4|DET 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|8|DET 8|6|OBJ 9|6|JCT 10|11|DET 11|9|POBJ 12|13|LINK 13|11|CMOD 14|15|DET 15|13|OBJ 16|13|JCT 17|18|DET 18|16|POBJ 19|6|PUNCT
+*CHI:	and the (.) giraffe (i)s just kneeling there on (.) his knees .
+%mor:	coord|and det:art|the n|giraffe aux|be&3S adv|just part|kneel-PRESP adv|there prep|on det:poss|his n|knee-PL .
+%gra:	1|6|LINK 2|3|DET 3|6|SUBJ 4|6|AUX 5|6|JCT 6|0|ROOT 7|6|JCT 8|6|JCT 9|10|DET 10|8|POBJ 11|6|PUNCT
+*CHI:	and now they (a)re taking <the> [/] (.) the elephant that gots [: has got] <um> [/] a (.) boo_boo on her knee to a bench .
+%mor:	coord|and adv:tem|now pro:sub|they aux|be&PRES part|take-PRESP det:art|the n|elephant pro:rel|that aux|have&3S part|get&PASTP det:art|a n|boo&DUP prep|on det:poss|her n|knee prep|to det:art|a n|bench .
+%gra:	1|5|LINK 2|5|JCT 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|10|LINK 9|10|AUX 10|7|CMOD 11|12|DET 12|10|OBJ 13|10|JCT 14|15|DET 15|13|POBJ 16|10|JCT 17|18|DET 18|16|POBJ 19|5|PUNCT
+*CHI:	and now (.) the lifeguard points to the sign no running .
+%mor:	coord|and adv:tem|now det:art|the n|+n|life+n|guard v|point-3S prep|to det:art|the n|sign co|no part|run-PRESP .
+%gra:	1|5|LINK 2|5|JCT 3|4|DET 4|5|SUBJ 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ 9|10|COM 10|5|XJCT 11|5|PUNCT
+*CHI:	and that (i)s what she was doing .
+%mor:	coord|and pro:dem|that cop|be&3S pro:int|what pro:sub|she aux|be&PAST&13S part|do-PRESP .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|7|LINK 5|7|SUBJ 6|7|AUX 7|3|CPRED 8|3|PUNCT
+@G:	A3
+*CHI:	<um> [/] a elephant and a giraffe .
+%mor:	det:art|a n|elephant coord|and det:art|a n|giraffe .
+%gra:	1|2|DET 2|0|INCROOT 3|2|CONJ 4|5|DET 5|3|COORD 6|2|PUNCT
+*CHI:	and the giraffe (ha)s gots [: has got] a airplane in his hand (.) ready to fly it .
+%mor:	coord|and det:art|the n|giraffe aux|have&3S aux|have&3S part|get&PASTP det:art|a n|+n|air+n|plane prep|in det:poss|his n|hand adj|ready inf|to v|fly pro:per|it .
+%gra:	1|6|LINK 2|3|DET 3|6|SUBJ 4|6|AUX 5|6|AUX 6|0|ROOT 7|8|DET 8|6|OBJ 9|6|JCT 10|11|DET 11|9|POBJ 12|6|JCT 13|14|INF 14|12|XMOD 15|14|OBJ 16|6|PUNCT
+*CHI:	and now (.) <the> [/] <the> [/] the (.) <gir> [//] giraffe is going to [^ gonna] throw it .
+%mor:	coord|and adv:tem|now det:art|the n|giraffe aux|be&3S part|go-PRESP inf|to v|throw pro:per|it .
+%gra:	1|6|LINK 2|6|JCT 3|4|DET 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|8|INF 8|6|COMP 9|8|OBJ 10|6|PUNCT
+*CHI:	and the elephant (i)s staring at it .
+%mor:	coord|and det:art|the n|elephant aux|be&3S part|stare-PRESP prep|at pro:per|it .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|6|POBJ 8|5|PUNCT
+*CHI:	and now the elephant grabs it .
+%mor:	coord|and adv:tem|now det:art|the n|elephant v|grab-3S pro:per|it .
+%gra:	1|5|LINK 2|5|JCT 3|4|DET 4|5|SUBJ 5|0|ROOT 6|5|OBJ 7|5|PUNCT
+*CHI:	and now (.) she (i)s going to [: gonna] try to fly it .
+%mor:	coord|and adv:tem|now pro:sub|she aux|be&3S part|go-PRESP part|go&PRESP~inf|to v|try inf|to v|fly pro:per|it .
+%gra:	1|0|INCROOT 2|1|COORD 3|5|SUBJ 4|5|AUX 5|2|CMOD 6|5|XJCT 7|8|INF 8|6|COMP 9|10|INF 10|8|COMP 11|10|OBJ 12|1|PUNCT
+*CHI:	and now she throws it into the pool .
+%mor:	coord|and adv:tem|now pro:sub|she v|throw-3S pro:per|it prep|into det:art|the n|pool .
+%gra:	1|4|LINK 2|4|JCT 3|4|SUBJ 4|0|ROOT 5|4|OBJ 6|4|JCT 7|8|DET 8|6|POBJ 9|4|PUNCT
+*CHI:	and now the giraffe (i)s angry at the elephant .
+%mor:	coord|and adv:tem|now det:art|the n|giraffe cop|be&3S adj|angry prep|at det:art|the n|elephant .
+%gra:	1|5|LINK 2|5|JCT 3|4|DET 4|5|SUBJ 5|0|ROOT 6|5|PRED 7|6|JCT 8|9|DET 9|7|POBJ 10|5|PUNCT
+*CHI:	and now the lifeguard sees it just floating in there .
+%mor:	coord|and adv:tem|now det:art|the n|+n|life+n|guard v|see-3S pro:per|it adv|just part|float-PRESP prep|in n|there .
+%gra:	1|5|LINK 2|5|JCT 3|4|DET 4|5|SUBJ 5|0|ROOT 6|5|OBJ 7|8|JCT 8|5|COMP 9|8|JCT 10|9|POBJ 11|5|PUNCT
+*CHI:	and now (.) <the elephant> [//] the (.) girl elephant (i)s trying to talk (.) what happened with the airplane to the lifeguard .
+%mor:	coord|and adv:tem|now det:art|the n|girl n|elephant aux|be&3S part|try-PRESP inf|to v|talk pro:int|what v|happen-PAST prep|with det:art|the n|+n|air+n|plane prep|to det:art|the n|+n|life+n|guard .
+%gra:	1|7|LINK 2|7|JCT 3|5|DET 4|5|MOD 5|7|SUBJ 6|7|AUX 7|0|ROOT 8|9|INF 9|7|COMP 10|11|SUBJ 11|9|COMP 12|11|JCT 13|14|DET 14|12|POBJ 15|14|NJCT 16|17|DET 17|15|POBJ 18|7|PUNCT
+*CHI:	now the lifeguard is trying to reach over and get it .
+%mor:	adv:tem|now det:art|the n|+n|life+n|guard aux|be&3S part|try-PRESP inf|to v|reach adv|over coord|and v|get pro:per|it .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|INF 7|5|COMP 8|7|JCT 9|5|CONJ 10|9|COORD 11|10|OBJ 12|5|PUNCT
+*CHI:	and <now the> [/] (.) now the giraffe <is tear> [//] got tears in his eyes .
+%mor:	coord|and adv:tem|now det:art|the n|giraffe v|get&PAST n|tear-PL prep|in det:poss|his n|eye-PL .
+%gra:	1|5|LINK 2|5|JCT 3|4|DET 4|5|SUBJ 5|0|ROOT 6|5|OBJ 7|5|JCT 8|9|DET 9|7|POBJ 10|5|PUNCT
+*CHI:	now (.) there (i)s a girl there (.) a girl elephant with a net that (i)s going to [: gonna] grab it .
+%mor:	adv:tem|now pro:exist|there cop|be&3S det:art|a n|girl adv|there det:art|a n|girl n|elephant prep|with det:art|a adj|net comp|that aux|be&3S part|go-PRESP part|go&PRESP~inf|to v|grab pro:per|it .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|5|NJCT 7|9|DET 8|9|MOD 9|6|POBJ 10|9|NJCT 11|12|DET 12|10|POBJ 13|15|LINK 14|15|AUX 15|12|CMOD 16|15|XJCT 17|18|INF 18|16|COMP 19|18|OBJ 20|3|PUNCT
+*CHI:	and now it (i)s picking it up out_of the water .
+%mor:	coord|and adv:tem|now pro:per|it aux|be&3S part|pick-PRESP pro:per|it adv|up prep|out_of det:art|the n|water .
+%gra:	1|5|LINK 2|5|JCT 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|5|JCT 8|5|JCT 9|10|DET 10|8|POBJ 11|5|PUNCT
+*CHI:	now gives it (.) to the giraffe .
+%mor:	adv:tem|now v|give-3S pro:per|it prep|to det:art|the n|giraffe .
+%gra:	1|2|JCT 2|0|ROOT 3|2|OBJ 4|2|JCT 5|6|DET 6|4|POBJ 7|2|PUNCT
+*CHI:	and now (.) the giraffe is hugging [!] (.) <the> [//] his airplane .
+%mor:	coord|and adv:tem|now det:art|the n|giraffe aux|be&3S part|hug-PRESP det:poss|his n|+n|air+n|plane .
+%gra:	1|6|LINK 2|6|JCT 3|4|DET 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|8|DET 8|6|OBJ 9|6|PUNCT
+*CHI:	the end . [+ bch]
+%mor:	det:art|the n|end .
+%gra:	1|2|DET 2|0|INCROOT 3|2|PUNCT
+@G:	B1
+*CHI:	<um> [/] a rabbit and his dog (.) are making a sandcastle .
+%mor:	det:art|a n|rabbit coord|and det:poss|his n|dog aux|be&PRES part|make-PRESP det:art|a n|+n|sand+n|castle .
+%gra:	1|2|DET 2|7|SUBJ 3|2|CONJ 4|5|DET 5|3|COORD 6|7|AUX 7|0|ROOT 8|9|DET 9|7|OBJ 10|7|PUNCT
+*CHI:	and now the rabbit gots [: has got] a shovel and his bucket .
+%mor:	coord|and adv:tem|now det:art|the n|rabbit aux|have&3S part|get&PASTP det:art|a n|shovel coord|and det:poss|his n|bucket .
+%gra:	1|6|LINK 2|6|JCT 3|4|DET 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|8|DET 8|6|OBJ 9|8|CONJ 10|11|DET 11|9|COORD 12|6|PUNCT
+*CHI:	and now (.) the rabbit (i)s going to [?] dump the sand from the bucket onto the sandcastle .
+%mor:	coord|and adv:tem|now det:art|the n|rabbit aux|be&3S part|go-PRESP inf|to v|dump det:art|the n|sand prep|from det:art|the n|bucket prep|onto det:art|the n|+n|sand+n|castle .
+%gra:	1|6|LINK 2|6|JCT 3|4|DET 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|8|INF 8|6|COMP 9|10|DET 10|8|OBJ 11|8|JCT 12|13|DET 13|11|POBJ 14|8|JCT 15|16|DET 16|14|POBJ 17|6|PUNCT
+*CHI:	and the sandcastle (i)s all mushed with a big pile of sand on top of it .
+%mor:	coord|and det:art|the n|+n|sand+n|castle aux|be&3S adv|all part|mush-PASTP prep|with det:art|a adj|big n|pile prep|of n|sand prep|on n|top prep|of pro:per|it .
+%gra:	1|6|LINK 2|3|DET 3|6|SUBJ 4|6|AUX 5|6|JCT 6|0|ROOT 7|6|JCT 8|10|DET 9|10|MOD 10|7|POBJ 11|10|NJCT 12|11|POBJ 13|10|NJCT 14|13|POBJ 15|14|NJCT 16|15|POBJ 17|6|PUNCT
+*CHI:	and now they (a)re trying to put it back together .
+%mor:	coord|and adv:tem|now pro:sub|they aux|be&PRES part|try-PRESP inf|to v|put&ZERO pro:per|it adv|back adv|together .
+%gra:	1|5|LINK 2|5|JCT 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|INF 7|5|COMP 8|7|OBJ 9|7|JCT 10|7|JCT 11|5|PUNCT
+*CHI:	and the rabbit (i)s like standing <like> [//] (.) something like this .
+%mor:	coord|and det:art|the n|rabbit cop|be&3S co|like part|stand-PRESP pro:indef|something prep|like pro:dem|this .
+%gra:	1|4|LINK 2|3|DET 3|4|SUBJ 4|0|ROOT 5|4|COM 6|4|XJCT 7|6|OBJ 8|7|NJCT 9|8|POBJ 10|4|PUNCT
+@G:	B2
+*CHI:	<um> [/] a rabbit and this (.) dog are walking down the road with these picnic baskets .
+%mor:	det:art|a n|rabbit coord|and det:dem|this n|dog aux|be&PRES part|walk-PRESP prep|down det:art|the n|road prep|with det:dem|these n|picnic n|basket-PL .
+%gra:	1|2|DET 2|7|SUBJ 3|2|CONJ 4|5|DET 5|3|COORD 6|7|AUX 7|0|ROOT 8|7|JCT 9|10|DET 10|8|POBJ 11|7|JCT 12|14|DET 13|14|MOD 14|11|POBJ 15|7|PUNCT
+*CHI:	and now they (a)re eating .
+%mor:	coord|and adv:tem|now pro:sub|they aux|be&PRES part|eat-PRESP .
+%gra:	1|5|LINK 2|5|JCT 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*CHI:	and now the rabbit (i)s stuffed .
+%mor:	coord|and adv:tem|now det:art|the n|rabbit aux|be&3S part|stuff-PASTP .
+%gra:	1|6|LINK 2|6|JCT 3|4|DET 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|PUNCT
+*CHI:	and he (i)s lying down .
+%mor:	coord|and pro:sub|he aux|be&3S part|lie-PRESP adv|down .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|JCT 6|4|PUNCT
+*CHI:	and the dog (i)s still eating (.) with a juice box in his hand .
+%mor:	coord|and det:art|the n|dog aux|be&3S adv|still part|eat-PRESP prep|with det:art|a n|juice n|box prep|in det:poss|his n|hand .
+%gra:	1|6|LINK 2|3|DET 3|6|SUBJ 4|6|AUX 5|6|JCT 6|0|ROOT 7|6|JCT 8|10|DET 9|10|MOD 10|7|POBJ 11|10|NJCT 12|13|DET 13|11|POBJ 14|6|PUNCT
+*CHI:	and now the juice box is is still in his hand .
+%mor:	coord|and adv:tem|now det:art|the n|juice n|box cop|be&3S cop|be&3S adv|still prep|in det:poss|his n|hand .
+%gra:	1|6|LINK 2|6|JCT 3|5|DET 4|5|MOD 5|6|SUBJ 6|7|SUBJ 7|0|ROOT 8|7|JCT 9|7|JCT 10|11|DET 11|9|POBJ 12|7|PUNCT
+*CHI:	and now the rabbit is still doing what <he> [/] he was doing before .
+%mor:	coord|and adv:tem|now det:art|the n|rabbit aux|be&3S adv|still part|do-PRESP pro:int|what pro:sub|he aux|be&PAST&13S part|do-PRESP adv|before .
+%gra:	1|7|LINK 2|7|JCT 3|4|DET 4|7|SUBJ 5|7|AUX 6|7|JCT 7|0|ROOT 8|11|LINK 9|11|SUBJ 10|11|AUX 11|7|COMP 12|11|JCT 13|7|PUNCT
+*CHI:	and now (.) he (ha)s gots [: got] his hands on his tummy .
+%mor:	coord|and adv:tem|now pro:sub|he aux|have&3S part|get&PASTP det:poss|his n|hand-PL prep|on det:poss|his n|tum-DIM .
+%gra:	1|5|LINK 2|5|JCT 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|JCT 9|10|DET 10|8|POBJ 11|5|PUNCT
+*CHI:	and he (i)s going pluck[/] pluck [/] pluck (.) something like that .
+%mor:	coord|and pro:sub|he aux|be&3S part|go-PRESP n|pluck pro:indef|something prep|like pro:dem|that .
+%gra:	1|4|LINK 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|5|POSTMOD 7|6|NJCT 8|7|POBJ 9|4|PUNCT
+*CHI:	and now (.) <the dog> [//] <the> [/] the dog (i)s running to (.) a doctor that (i)s walking down the road (.) and pulls the doctor to the rabbit .
+%mor:	coord|and adv:tem|now det:art|the n|dog aux|be&3S part|run-PRESP prep|to det:art|a n|doctor pro:rel|that aux|be&3S part|walk-PRESP prep|down det:art|the n|road coord|and v|pull-3S det:art|the n|doctor prep|to det:art|the n|rabbit .
+%gra:	1|6|LINK 2|6|JCT 3|4|DET 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|9|DET 9|7|POBJ 10|12|LINK 11|12|AUX 12|9|CMOD 13|12|JCT 14|15|DET 15|13|POBJ 16|12|CONJ 17|16|COORD 18|19|DET 19|17|OBJ 20|17|JCT 21|22|DET 22|20|POBJ 23|6|PUNCT
+*CHI:	and now (.) the doctor is fixing up the rabbit .
+%mor:	coord|and adv:tem|now det:art|the n|doctor aux|be&3S part|fix-PRESP prep|up det:art|the n|rabbit .
+%gra:	1|6|LINK 2|6|JCT 3|4|DET 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|9|DET 9|7|POBJ 10|6|PUNCT
+*CHI:	and now <the r> [//] the doctor rabbit is taking (.) <the> [/] the little rabbit home (.) I think .
+%mor:	coord|and adv:tem|now det:art|the n|doctor n|rabbit aux|be&3S part|take-PRESP det:art|the adj|little n|rabbit adv|home pro:sub|I v|think .
+%gra:	1|7|LINK 2|7|JCT 3|5|DET 4|5|MOD 5|7|SUBJ 6|7|AUX 7|0|ROOT 8|10|DET 9|10|MOD 10|7|OBJ 11|7|JCT 12|13|SUBJ 13|7|CJCT 14|7|PUNCT
+@G:	B3
+*CHI:	this dog has a balloon tied up to his wagon .
+%mor:	det:dem|this n|dog v|have&3S det:art|a n|balloon v|tie-PAST adv|up prep|to det:poss|his n|wagon .
+%gra:	1|2|DET 2|3|SUBJ 3|0|ROOT 4|5|DET 5|6|SUBJ 6|3|COMP 7|6|JCT 8|6|JCT 9|10|DET 10|8|POBJ 11|3|PUNCT
+*CHI:	<and the ra> [//] and the rabbit (i)s walking by .
+%mor:	coord|and det:art|the n|rabbit aux|be&3S part|walk-PRESP adv|by .
+%gra:	1|5|LINK 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|5|PUNCT
+*CHI:	and now the rabbit (i)s going to [^ gonna] grab the balloon and untie it I guess .
+%mor:	coord|and adv:tem|now det:art|the n|rabbit aux|be&3S part|go-PRESP inf|to v|grab det:art|the n|balloon coord|and un#v|tie pro:per|it pro:sub|I v|guess .
+%gra:	1|6|LINK 2|6|JCT 3|4|DET 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|8|INF 8|6|COMP 9|10|DET 10|8|OBJ 11|10|CONJ 12|11|COORD 13|8|OBJ 14|15|SUBJ 15|13|CMOD 16|6|PUNCT
+*CHI:	and now he (i)s untying it .
+%mor:	coord|and adv:tem|now pro:sub|he cop|be&3S un#n:gerund|tie-GERUND pro:per|it .
+%gra:	1|4|LINK 2|4|JCT 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|5|OBJ 7|4|PUNCT
+*CHI:	and now the balloon (i)s floating up into the air .
+%mor:	coord|and adv:tem|now det:art|the n|balloon aux|be&3S part|float-PRESP adv|up prep|into det:art|the n|air .
+%gra:	1|6|LINK 2|6|JCT 3|4|DET 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|6|JCT 9|10|DET 10|8|POBJ 11|6|PUNCT
+*CHI:	and now the string is all that they can see .
+%mor:	coord|and adv:tem|now det:art|the n|string cop|be&3S adv|all comp|that pro:sub|they mod|can v|see .
+%gra:	1|5|LINK 2|5|JCT 3|4|DET 4|5|SUBJ 5|0|ROOT 6|10|JCT 7|10|LINK 8|10|SUBJ 9|10|AUX 10|5|CPRED 11|5|PUNCT
+*CHI:	<and the rab> [//] and the dog (.) shaking its fists (.) and just standing there [^ makes noise "errr"] .
+%mor:	coord|and det:art|the n|dog part|shake-PRESP det:poss|its n|fist-PL coord|and adv|just part|stand-PRESP n|there .
+%gra:	1|0|INCROOT 2|3|DET 3|1|COORD 4|3|XMOD 5|6|DET 6|4|OBJ 7|3|CONJ 8|9|JCT 9|7|COORD 10|9|OBJ 11|1|PUNCT
+*CHI:	and then there (i)s another rabbit over here (.) that gots [: has got] some balloons in his hands .
+%mor:	coord|and adv:tem|then adv|there cop|be&3S qn|another n|rabbit prep|over n|here pro:rel|that aux|have&3S part|get&PASTP qn|some n|balloon-PL prep|in det:poss|his n|hand-PL .
+%gra:	1|4|LINK 2|4|JCT 3|4|SUBJ 4|0|ROOT 5|6|QUANT 6|4|PRED 7|6|NJCT 8|7|POBJ 9|11|LINK 10|11|AUX 11|8|CMOD 12|13|QUANT 13|11|OBJ 14|11|JCT 15|16|DET 16|14|POBJ 17|4|PUNCT
+*CHI:	and now <the rabbit> [//] (.) the little rabbit walks up to him and asks could I have a balloon ?
+%mor:	coord|and adv:tem|now det:art|the adj|little n|rabbit v|walk-3S adv|up prep|to pro:obj|him coord|and v|ask-3S mod|could pro:sub|I v|have det:art|a n|balloon ?
+%gra:	1|6|LINK 2|6|JCT 3|5|DET 4|5|MOD 5|6|SUBJ 6|0|ROOT 7|6|JCT 8|6|JCT 9|8|POBJ 10|6|CONJ 11|10|COORD 12|14|AUX 13|14|SUBJ 14|11|COMP 15|16|DET 16|14|OBJ 17|6|PUNCT
+*CHI:	and they (a)re five cents [=! yawning] each a balloon .
+%mor:	coord|and pro:sub|they cop|be&PRES det:num|five n|cent-PL qn|each det:art|a n|balloon .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|QUANT 5|3|PRED 6|8|QUANT 7|8|DET 8|5|OBJ 9|3|PUNCT
+*CHI:	and now he (i)s pulling out his pockets .
+%mor:	coord|and adv:tem|now pro:sub|he aux|be&3S part|pull-PRESP adv|out det:poss|his n|pocket-PL .
+%gra:	1|5|LINK 2|5|JCT 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|JCT 7|8|DET 8|6|POBJ 9|5|PUNCT
+*CHI:	and there (i)s nothing in it .
+%mor:	coord|and adv|there cop|be&3S pro:indef|nothing prep|in pro:per|it .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|4|NJCT 6|5|POBJ 7|3|PUNCT
+*CHI:	and now they (a)re both just standing there .
+%mor:	coord|and adv:tem|now pro:sub|they cop|be&PRES qn|both adv|just part|stand-PRESP n|there .
+%gra:	1|4|LINK 2|4|JCT 3|4|SUBJ 4|0|ROOT 5|7|QUANT 6|7|JCT 7|4|PRED 8|7|OBJ 9|4|PUNCT
+*CHI:	and now <the rabbit> [//] the little [!] rabbit walks over to the doctor bunny [!] again (.) and asks can I have a balloon from him ?
+%mor:	coord|and adv:tem|now det:art|the adj|little n|rabbit v|walk-3S adv|over prep|to det:art|the n|doctor n|bunny adv:tem|again coord|and v|ask-3S mod|can pro:sub|I v|have det:art|a n|balloon prep|from pro:obj|him ?
+%gra:	1|6|LINK 2|6|JCT 3|5|DET 4|5|MOD 5|6|SUBJ 6|0|ROOT 7|6|JCT 8|6|JCT 9|11|DET 10|11|MOD 11|8|POBJ 12|6|JCT 13|6|CONJ 14|13|COORD 15|17|AUX 16|17|SUBJ 17|14|COMP 18|19|DET 19|17|OBJ 20|17|JCT 21|20|POBJ 22|6|PUNCT
+*CHI:	and now <he> [//] the <lit> [//] rabbit (i)s paying (.) <to> [//] for a balloon (.) too .
+%mor:	coord|and adv:tem|now det:art|the n|rabbit aux|be&3S part|pay-PRESP prep|for det:art|a n|balloon adv|too .
+%gra:	1|6|LINK 2|6|JCT 3|4|DET 4|6|SUBJ 5|6|AUX 6|0|ROOT 7|6|JCT 8|9|DET 9|7|POBJ 10|6|JCT 11|6|PUNCT
+*CHI:	and now they both got a balloon .
+%mor:	coord|and adv:tem|now pro:sub|they qn|both v|get&PAST det:art|a n|balloon .
+%gra:	1|0|INCROOT 2|1|COORD 3|5|SUBJ 4|5|QUANT 5|2|CMOD 6|7|DET 7|5|OBJ 8|1|PUNCT
+*CHI:	and that (i)s the end . [+ bch]
+%mor:	coord|and pro:dem|that cop|be&3S det:art|the n|end .
+%gra:	1|3|LINK 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|PRED 6|3|PUNCT
+@End

@@ -5,7 +5,7 @@ from flask_cors import CORS
 import os
 import json
 app = Flask(__name__, static_folder='./ASR-UI/dist/ASR-UI', static_url_path='/')
-CORS(app)
+#CORS(app)
 
 # dataset path as a global variable
 dataset_path = None
@@ -96,15 +96,20 @@ def get_mp3_files():
     end_index = page * per_page
     return jsonify(mp3_files[start_index:end_index])
 
-def run_user_intervention_app(output_data_path):
+
+
+
+def run_user_intervention_app(output_data_path, app_started):
     global dataset_path
     dataset_path = os.path.join(output_data_path, 'inspection')
 
-    webbrowser.open('http://127.0.0.1:5000')
-    app.run(debug=True)
 
-# if __name__ == '__main__':
-#     parser = argparse.ArgumentParser()
-#     parser.add_argument('--output_data', required=True, help='Path to the output data directory')
-#     args = parser.parse_args()
-#     run_user_intervention_app(args.output_data)
+    webbrowser.open('http://127.0.0.1:5000')
+
+    app.run(debug=False)
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--output_data', required=True, help='Path to the output data directory')
+    args = parser.parse_args()
+    run_user_intervention_app(args.output_data,False)

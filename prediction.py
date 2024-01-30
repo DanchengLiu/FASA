@@ -14,6 +14,7 @@ import heapq
 import math
 
 import whisperx
+import stable_whisper
 import gc 
 # return the word-level timestamps of an audio file
 '''
@@ -133,6 +134,60 @@ def predict_dataset(audio_folder_path, out_dir, model_type='whisperx', model_siz
                         fd.write(l+'\n')
                     fd.close()                
                 
+    elif model_type =='whisper':
+        model = stable_whisper.load_model("large", device)
+        #model = stable_whisper.load_faster_whisper('large',device=device)
+        #model.to(device)
+        
+        
+        for item in range(len(audio_file_list)):
+            audio_file = audio_file_list[item]
+            text_file = text_file_list[item]
+            result = model.transcribe(os.path.join(audio_folder_path,audio_file), max_instant_words=0.8)
+            #result = model.transcribe(os.path.join(audio_folder_path,audio_file))
+            #adjust max number of words here for length purposes (max_words=)
+            result = result.merge_by_gap(2.0,max_words=15, is_sum_max=True)
+            
+            # prediction
+            if result.language in LANG:
+                ###
                 
+                sentence_level_alignment = []
+                word_level_alignment = []
+                # out dir full path
+                segment_root = os.path.join(out_dir,audio_file.split('.mp3')[0])
+                if os.path.exists(segment_root):
+                    shutil.rmtree(segment_root)
+                os.makedirs(segment_root)
+                # copy provided GT over
+                shutil.copyfile(os.path.join(audio_folder_path,audio_file.split('.mp3')[0]+'.txt'), os.path.join(segment_root,audio_file.split('.mp3')[0]+'.txt'))
+                shutil.copyfile(os.path.join(audio_folder_path,audio_file), os.path.join(segment_root,audio_file))
+                for segment in result.segments:
+                
+                    sentence_level_alignment.append(segment.text+'\t'+str(segment.start)+'\t'+str(segment.end))
+                    
+                    for word in segment.words:
+                        
+                        # it should be noted that on rare cases, a word does not have alignment (e.g $5)
+                        try:
+                        
+                            word_level_alignment.append(word.word+'\t'+str(word.start)+'\t'+str(word.end))
+                        except:
+                            print("a word does not have start or end.")
+                        
+                
+
+                if sentence_level:
+                    fd = open(os.path.join(segment_root, 'sentence_pred_timestamp'), "w")
+                    for l in sentence_level_alignment:
+                        fd.write(l+'\n')
+                    fd.close()
+                if word_level:
+                    fd = open(os.path.join(segment_root, 'word_pred_timestamp'), "w")
+                    for l in word_level_alignment:
+                        fd.write(l+'\n')
+                    fd.close()   
+    else:
+        raise Exception("Sorry, model requested not supported")
                 
                 

@@ -7,7 +7,7 @@ from prediction import predict_dataset, predict_one_file
 from segmentation import segment_dataset, segment_from_prediction
 from preprocess import preprocess_dataset, preprocess_txt
 from user_intervention import run_user_intervention_app
-
+from repeated_verification import repeated_verification
 parser = argparse.ArgumentParser(description='FASA Toolkit v1.0')
 
 
@@ -16,6 +16,7 @@ parser.add_argument('-o', '--output_data', required=True, help='output file or o
 
 
 parser.add_argument('-inter', '--intermediate', required=True, help='specify the path to store intermediate files here')
+parser.add_argument('-t', '--trash', required=False, help='specify the path to keep trash files (in case you need them)')
 parser.add_argument('-delete_inter', '--delete_intermediate', choices=['True', 'False'], required=False, default='False', help='whether to keep the intermediate files (default to True)')
 
 parser.add_argument('-pre', '--preprocess', choices=['True', 'False'], required=False, default='False', help='preprocess the dataset using RegEx (default to False)')
@@ -33,11 +34,15 @@ parser.add_argument('-ts', '--timestamp', choices=['True', 'False'], required=Fa
 
 parser.add_argument('-wer_K', '--wer_keep_segment', type=float, required=False, default=0.3, help='WER threshold to keep the segment when comparing from the provided transcription without need to check (default to 0.1)')
 parser.add_argument('-wer_C', '--wer_check_segment', type=float, required=False, default=0.1, help='WER threshold to keep the segment when comparing from the provided transcription, but with checking (default to 0.3)')
+parser.add_argument('-err_R', '--error_repeat_segment', type=float, required=False, default=1.0, help='length error threshold for repeated verification in case model has some problems in the first iteration (default to 1.0)')
 parser.add_argument('-c', '--check', choices=['True', 'False'], required=False, default='True', help='launch the checking interface after segmentation is done (default to True)')
 
+parser.add_argument('-r', '--repeat', choices=['True', 'False'], required=False, default='True', help='lconduct repeated checking to make sure model is doing correct things (default to True)')
 
-
+# Flag to check if the app has been started
+app_started = False
 if __name__ == "__main__":
+
     args = parser.parse_args()
     print(args)
     
@@ -54,13 +59,17 @@ if __name__ == "__main__":
     timestamp=True
     check=True 
     delete_intermediate=True
+
+    trash_dir = ""
     if args.word_level_alignment=='False':
         word_level_alignment = False
     if args.timestamp=='False':
         timestamp = False    
-  
+
     if args.delete_intermediate=='False':
         delete_intermediate = False   
+    if trash_dir != None:
+        trash_dir = os.path.join(args.intermediate,'trash')
     '''
     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     WARNING: do not call preprocess on languages other than English!!!
@@ -70,6 +79,7 @@ if __name__ == "__main__":
     in_files = args.input_data
     
     if os.path.isdir(in_files):
+        
         if args.preprocess=='True':
             if args.preprocess_output_location != None:
                 preprocess_dataset(args.input_data, in_place=False, out_folder = args.preprocess_output_location)
@@ -78,18 +88,24 @@ if __name__ == "__main__":
                 preprocess_dataset(args.input_data, in_place=True, out_folder = None)
         
         #prediction
-        #predict_dataset(in_files, args.intermediate, model_type=args.model, HF_token=args.HF, 
-        #                device=args.device, precision=args.precision, word_level=word_level_alignment)
+        predict_dataset(in_files, args.intermediate, model_type=args.model, model_size=args.size, HF_token=args.HF, 
+                        device=args.device, precision=args.precision, word_level=word_level_alignment)
         
         #alignment
-        #segment_dataset(args.intermediate,args.output_data, delete_intermediate=delete_intermediate, 
-        #                keep_timestamp=timestamp, export_word_timestamp=word_level_alignment, 
-        #                wer_keep_threshold=args.wer_keep_segment, wer_check_threshold=args.wer_check_segment)
+        segment_dataset(args.intermediate,args.output_data, delete_intermediate=delete_intermediate, 
+                        keep_timestamp=timestamp, export_word_timestamp=word_level_alignment, 
+                        wer_keep_threshold=args.wer_keep_segment, wer_check_threshold=args.wer_check_segment)
         
         #checking
         if args.check=='True':
-            run_user_intervention_app(args.output_data)
+            run_user_intervention_app(args.output_data, app_started)
+            app_started = True
         
+        
+        if args.repeat=='True':
+            repeated_verification(args.output_data,model_type=args.model, model_size=args.size, HF_token=args.HF, 
+                        device=args.device, precision=args.precision, ERROR_thresh=args.error_repeat_segment, 
+                        trash_dir=trash_dir) 
         
     elif os.path.isfile(in_files):
         if args.preprocess=='True':
@@ -110,4 +126,10 @@ if __name__ == "__main__":
         
         #checking
         if args.check=='True':
-            run_user_intervention_app(args.output_data)
+            run_user_intervention_app(args.output_data, app_started)
+            app_started = True
+            
+        if args.repeat=='True':
+            repeated_verification(args.output_data,model_type=args.model, model_size=args.size, HF_token=args.HF, 
+                        device=args.device, precision=args.precision, ERROR_thresh=args.error_repeat_segment, 
+                        trash_dir=trash_dir)

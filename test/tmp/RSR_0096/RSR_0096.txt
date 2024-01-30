@@ -1,0 +1,32 @@
+@UTF8
+@Window:	0_0_0_0_0_0_1149_0_1149_0
+@Begin
+@Languages:	eng
+@Participants:	CHI Target_Child, INV Investigator
+@ID:	eng|RSR_AI4exEd|CHI|||||Target_Child|||
+@ID:	eng|RSR_AI4exEd|INV|||||Investigator|||
+@Media:	RSR_0096, audio
+@Transcriber:	tpreza2
+*CHI:	The big football player washed the car with the hose. 2889_6839
+*CHI:	All of the pictures were colored by his little sister. 15355_18821
+*CHI:	The (..) rose plants were planted yesterday by the <rose scouts>
+	[//] girl scouts. 27067_37458
+*CHI:	The happy little girl kicked the ball over the fence. 43473_48974
+*CHI:	His little brother (..) cleaned the dishes and cups. 51137_56243
+*CHI:	A special cage was made to hold (.) dangerous animals. 63842_70564
+*CHI:	Everybody in my school colored (.) Easter eggs for the picnic. 75782_82124
+*CHI:	A new hole was dug for the <new swimming p>
+	[//] kid's new swimming pool. 87685_96720
+*CHI:	Only the first graders made a birdhouse for their parents. 99085_104579
+*CHI:	My little sister's dog caught the ball (..) on the fence on the
+	first throw. 111778_121896
+*CHI:	The soccer ball was kicked <in the school> [//] into the school's
+	parking lot. 128667_139461
+*CHI:	The lion's teeth were cleaned by a giant toothbrush. 145752_150645
+*CHI:	Some of the kids dug a &+s big sand hole six feet
+	deep. 154011_161575
+*CHI:	The little mouse was caught by our (.) little neighbor's cat. 169955_177426
+*CHI:	The second graders planted (.) &-uh <seeds in the garden> [//]
+	watermelon seeds in the garden. 179159_191756
+*CHI:	The dirty clothes were washed by soap (.) one more time. 197790_203461
+@End
