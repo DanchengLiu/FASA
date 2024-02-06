@@ -9,6 +9,7 @@ app = Flask(__name__, static_folder='./ASR-UI/dist/ASR-UI', static_url_path='/')
 
 # dataset path as a global variable
 dataset_path = None
+output_data= None
 
 def read_transcription_file(transcription_file_path):
     with open(transcription_file_path, 'r') as file:
@@ -113,8 +114,8 @@ def jsonToTranscription():
         answers_data = json.load(answers_file)
 
     # Iterate over dataset files
-    for folder in os.listdir(dataset_path):
-        folder_path = os.path.join(dataset_path, folder)
+    for folder in os.listdir(output_data):
+        folder_path = os.path.join(output_data, folder)
         if os.path.isdir(folder_path):
             for file in os.listdir(folder_path):
                 if file.endswith('.txt'):
@@ -127,11 +128,10 @@ def jsonToTranscription():
 
 def run_user_intervention_app(output_data_path, app_started):
     global dataset_path
+    global output_data
+    output_data = output_data_path
     dataset_path = os.path.join(output_data_path, 'inspection')
-
-
     webbrowser.open('http://127.0.0.1:5000')
-
     app.run(debug=False)
 
 if __name__ == '__main__':
