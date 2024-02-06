@@ -21,4 +21,8 @@ export class FileTranscriptionsService {
   getMP3FileUrl(mp3File: string): string {
     return `${apiURL}/play/${mp3File}`;
   }
+
+  copyJsonToTranscription(): Observable<any> {
+    return this.http.post(`${apiURL}/jsonToTranscription`,{});
+  }
 }

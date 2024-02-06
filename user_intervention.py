@@ -96,7 +96,33 @@ def get_mp3_files():
     end_index = page * per_page
     return jsonify(mp3_files[start_index:end_index])
 
+#code for writing back to transcription files
+def write_answer_to_transcription(answer, transcription_file_path):
+    with open(transcription_file_path, 'r+') as file:
+        content = file.read()
+        if answer.strip() not in content:
+            file.write(answer.strip() + '\n')
 
+
+@app.route('/jsonToTranscription', methods=['POST'])
+def jsonToTranscription():
+    answers_file_path = os.path.join(dataset_path, 'answers.json')
+
+    # Read the answers JSON file
+    with open(answers_file_path, 'r') as answers_file:
+        answers_data = json.load(answers_file)
+
+    # Iterate over dataset files
+    for folder in os.listdir(dataset_path):
+        folder_path = os.path.join(dataset_path, folder)
+        if os.path.isdir(folder_path):
+            for file in os.listdir(folder_path):
+                if file.endswith('.txt'):
+                    transcription_file_path = os.path.join(folder_path, file)
+                    answer = answers_data.get(os.path.join(folder, file).replace('.txt', '.mp3'), '')
+                    if answer:
+                        write_answer_to_transcription(answer, transcription_file_path)
+    return jsonify({'message': 'JSON saved to transcription file successfully'}), 200
 
 
 def run_user_intervention_app(output_data_path, app_started):
