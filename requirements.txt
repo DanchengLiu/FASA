@@ -1,0 +1,13 @@
+Flask==3.0.2
+Flask_Cors==4.0.0
+jiwer==3.0.3
+numpy==1.22.3
+openai_whisper==20230918
+pandas==1.2.5
+pydub==0.25.1
+python_Levenshtein==0.22.0
+python_Levenshtein==0.25.0
+stable_ts==2.12.3
+torch==2.0.1
+torchaudio==2.0.2
+whisper_at==0.5

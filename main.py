@@ -8,7 +8,7 @@ from segmentation import segment_dataset, segment_from_prediction
 from preprocess import preprocess_dataset, preprocess_txt
 from user_intervention import run_user_intervention_app
 from repeated_verification import repeated_verification
-parser = argparse.ArgumentParser(description='FASA Toolkit v1.0')
+parser = argparse.ArgumentParser(description='FASA Toolkit v1.3')
 
 
 parser.add_argument('-i', '--input_data', required=True, help='input file or input dataset directory')
