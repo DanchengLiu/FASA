@@ -90,5 +90,7 @@ optional arguments:
 
 
 # Example Usage
- python -u main.py -i ./test/raw/ -o ./test/outx -inter ./test/tmpx -c False -m whisperx -d cuda
+python -u main.py -i ./test/raw/ -o ./test/outx -inter ./test/tmpx -c False -m whisperx -d cuda
 
+# A note to the users
+There were some merge conflicts, and we are not sure if everything is correct with this branch on GitHub. If there are any issues, let us know.
