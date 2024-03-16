@@ -9,6 +9,7 @@ app = Flask(__name__, static_folder='./ASR-UI/dist/ASR-UI', static_url_path='/')
 
 # dataset path as a global variable
 dataset_path = None
+output_data= None
 
 def read_transcription_file(transcription_file_path):
     with open(transcription_file_path, 'r') as file:
@@ -96,16 +97,55 @@ def get_mp3_files():
     end_index = page * per_page
     return jsonify(mp3_files[start_index:end_index])
 
+#code for writing back to transcription files
+def write_answer_to_transcription(answer, transcription_file_path):
+    print(os.path.join(dataset_path,transcription_file_path))
+    print(os.path.join(output_data, transcription_file_path))
+    os.rename(os.path.join(dataset_path,transcription_file_path) , os.path.join(output_data, transcription_file_path))
+    print(os.path.join(output_data, transcription_file_path)[:-4]+'.txt')
 
+    with open( os.path.join(output_data, transcription_file_path)[:-4]+'.txt', 'w') as file:
+        #content = file.read()
+        #if answer.strip() not in content:
+        file.write(answer)
+        
+        os.remove(os.path.join(dataset_path,transcription_file_path)[:-4]+'.txt')   
+
+
+@app.route('/jsonToTranscription', methods=['POST'])
+def jsonToTranscription():
+    answers_file_path = os.path.join(dataset_path, 'answers.json')
+
+    # Read the answers JSON file
+    with open(answers_file_path, 'r') as answers_file:
+        answers_data = json.load(answers_file)
+
+    '''
+    # Iterate over dataset files
+    for folder in os.listdir(output_data):
+        folder_path = os.path.join(output_data, folder)
+        
+        if os.path.isdir(folder_path):
+            for file in os.listdir(folder_path):
+                if file.endswith('.txt'):
+                    transcription_file_path = os.path.join(folder_path, file)
+                    answer = answers_data.get(os.path.join(folder, file).replace('.txt', '.mp3'), '')
+                    if answer:
+                        print("1111111111111111111111111")
+                        write_answer_to_transcription(answer, transcription_file_path)
+    '''
+    for path in answers_data.keys():
+        write_answer_to_transcription(answers_data[path], path)
+    os.remove(answers_file_path)
+    return jsonify({'message': 'JSON saved to transcription file successfully'}), 200
 
 
 def run_user_intervention_app(output_data_path, app_started):
     global dataset_path
+    global output_data
+    output_data = output_data_path
     dataset_path = os.path.join(output_data_path, 'inspection')
-
-
     webbrowser.open('http://127.0.0.1:5000')
-
     app.run(debug=False)
 
 if __name__ == '__main__':

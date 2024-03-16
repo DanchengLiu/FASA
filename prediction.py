@@ -93,8 +93,15 @@ def predict_dataset(audio_folder_path, out_dir, model_type='whisperx', model_siz
         for item in range(len(audio_file_list)):
             audio_file = audio_file_list[item]
             text_file = text_file_list[item]
-            audio = whisperx.load_audio(os.path.join(audio_folder_path,audio_file))
-            result = model.transcribe(audio, batch_size=1)
+            #meta_file = audio_file.split('.mp3')[0]+'.metadata'
+
+            result = {'language': None}
+            try:            
+                audio = whisperx.load_audio(os.path.join(audio_folder_path,audio_file))
+
+                result = model.transcribe(audio, batch_size=1)
+            except:
+                print("something is wrong with the audio file: "+os.path.join(audio_folder_path,audio_file))
             
             # prediction
             if result['language'] in LANG:
@@ -111,6 +118,7 @@ def predict_dataset(audio_folder_path, out_dir, model_type='whisperx', model_siz
                 # copy provided GT over
                 shutil.copyfile(os.path.join(audio_folder_path,audio_file.split('.mp3')[0]+'.txt'), os.path.join(segment_root,audio_file.split('.mp3')[0]+'.txt'))
                 shutil.copyfile(os.path.join(audio_folder_path,audio_file), os.path.join(segment_root,audio_file))
+                #shutil.copyfile(os.path.join(audio_folder_path,meta_file), os.path.join(segment_root,'metadata'))
                 for segment in result['segments']:
                 
                     sentence_level_alignment.append(segment['text']+'\t'+str(segment['start'])+'\t'+str(segment['end']))
@@ -143,6 +151,9 @@ def predict_dataset(audio_folder_path, out_dir, model_type='whisperx', model_siz
         for item in range(len(audio_file_list)):
             audio_file = audio_file_list[item]
             text_file = text_file_list[item]
+            #meta_file = audio_file.split('.mp3')[0]+'.metadata'
+            
+            
             result = model.transcribe(os.path.join(audio_folder_path,audio_file), max_instant_words=0.8)
             #result = model.transcribe(os.path.join(audio_folder_path,audio_file))
             #adjust max number of words here for length purposes (max_words=)
@@ -162,6 +173,7 @@ def predict_dataset(audio_folder_path, out_dir, model_type='whisperx', model_siz
                 # copy provided GT over
                 shutil.copyfile(os.path.join(audio_folder_path,audio_file.split('.mp3')[0]+'.txt'), os.path.join(segment_root,audio_file.split('.mp3')[0]+'.txt'))
                 shutil.copyfile(os.path.join(audio_folder_path,audio_file), os.path.join(segment_root,audio_file))
+                #shutil.copyfile(os.path.join(audio_folder_path,meta_file), os.path.join(segment_root,'metadata'))
                 for segment in result.segments:
                 
                     sentence_level_alignment.append(segment.text+'\t'+str(segment.start)+'\t'+str(segment.end))

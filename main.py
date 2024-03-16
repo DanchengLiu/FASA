@@ -95,11 +95,7 @@ if __name__ == "__main__":
         segment_dataset(args.intermediate,args.output_data, delete_intermediate=delete_intermediate, 
                         keep_timestamp=timestamp, export_word_timestamp=word_level_alignment, 
                         wer_keep_threshold=args.wer_keep_segment, wer_check_threshold=args.wer_check_segment)
-        
-        #checking
-        if args.check=='True':
-            run_user_intervention_app(args.output_data, app_started)
-            app_started = True
+
         
         
         if args.repeat=='True':
@@ -107,6 +103,12 @@ if __name__ == "__main__":
                         device=args.device, precision=args.precision, ERROR_thresh=args.error_repeat_segment, 
                         trash_dir=trash_dir) 
         
+        #checking
+        if args.check=='True':
+            run_user_intervention_app(args.output_data, app_started)
+            app_started = True
+                    
+    # single file might have some problems, not fully tested
     elif os.path.isfile(in_files):
         if args.preprocess=='True':
             if args.preprocess_output_location != None:
@@ -124,12 +126,13 @@ if __name__ == "__main__":
                         keep_timestamp=timestamp, export_word_timestamp=word_level_alignment, 
                         wer_keep_threshold=args.wer_keep_segment, wer_check_threshold=args.wer_check_segment)
         
-        #checking
-        if args.check=='True':
-            run_user_intervention_app(args.output_data, app_started)
-            app_started = True
+
             
         if args.repeat=='True':
             repeated_verification(args.output_data,model_type=args.model, model_size=args.size, HF_token=args.HF, 
                         device=args.device, precision=args.precision, ERROR_thresh=args.error_repeat_segment, 
                         trash_dir=trash_dir)
+        #checking
+        if args.check=='True':
+            run_user_intervention_app(args.output_data, app_started)
+            app_started = True

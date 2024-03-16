@@ -79,4 +79,14 @@ export class FilesTranscriptionsComponent implements OnInit {
     return !file.transcription_lines.some(line => file.answer === line);
   }
 
+  copyJsonToTranscription(){
+    this.fileTranscriptionsService.copyJsonToTranscription().subscribe
+    ((response) => {
+        console.log('Server Message:', response.message);
+    }), (error) => {
+      console.error('Failed to save transcription:', error);
+      alert('Failed to save transcription.');
+    };
+  }
+
 }
